@@ -1,0 +1,61 @@
+/* NAVIGATION */
+
+
+
+@media (max-width: 1200px) {
+
+    #navigation a {
+
+        font-size: 2.2rem;
+        padding: 1rem 5rem;
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+#navigation a:not(:nth-child(5)) {
+    display: none;
+}
+.icon {
+    display: block;
+    position: absolute;
+    right: -3rem;
+    top: -1.6rem;
+    cursor: pointer;
+    color: #373737;
+    font-size: 3rem!important;
+}
+
+#navigation {
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: all 0.4s ease-in-out;
+    border-bottom: 2px solid #373737;
+}
+
+#navigation.responsive {
+    height: 38rem;
+}
+
+#navigation.responsive a:not(:nth-child(5)) {
+
+    display: block;
+    text-align: center;
+    background: #F0EAd6;
+    margin: 0;
+    position: relative;
+    top: 4rem;
+    font-size: 3rem;
+
+}
+
+
+
+}
