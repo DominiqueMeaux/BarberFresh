@@ -12,6 +12,10 @@
         <!-- Feuilles de style -->
         <link rel="stylesheet" href="assets/CSS/style.css">
         <link rel="stylesheet" href="assets/CSS/medias.css">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+        <!-- GreenSock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <title>Barber</title>
     </head>
 
@@ -21,16 +25,16 @@
 
             <nav id="navigation">
 
-                <a href="#accueil" class="liensNav">accueil</a>
-                <a href="#valeurs" class="liensNav">valeurs</a>
-                <a href="#tarifs" class="liensNav">tarifs</a>
-                <a href="#contact" class="liensNav">contact</a>
-                <a class="icon" id="icon"><i class="fas fa-bars"></i></a>
+                <a href="#accueil" class="liensNav" onclick="toggleNav()">accueil</a>
+                <a href="#valeurs" class="liensNav" onclick="toggleNav()">valeurs</a>
+                <a href="#tarifs" class="liensNav" onclick="toggleNav()">tarifs</a>
+                <a href="#contact" class="liensNav" onclick="toggleNav()">contact</a>
+                <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a>
             </nav>
 
             <h1>Votre Barbier Traditionnel.</h1>
             <h2>Rasoir, Peigne et Savoir-faire.</h2>
-            <a href="#section-about" class="arrow"><i class="fas fa-cut"></i></a>
+            <a href="#section-about" id="arrow"><i class="fas fa-cut"></i></a>
         </header>
 
         <!-- Section About -->
